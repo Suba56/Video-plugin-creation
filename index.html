@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Keyboard Extension</title>
-    <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet">
 </head>
 <body>
-    <video id="myVideo" class="video-js" controls preload="auto" width="640" height="264">
+    <video id="myVideo" width="640" height="360" controls>
         <source src="src/video.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
+        Your browser does not support the video tag.
     </video>
-    <script src="https://vjs.zencdn.net/7.15.4/video.min.js"></script>
-    <script src="src/videoKeyboardExtension.js"></script>
+    <script type="module" src="./dist/main.js"></script>
+    <script type="module" src="./dist/VideoKeyboardExtension.js"></script>
 </body>
 </html>

@@ -1,19 +1,13 @@
-interface IVideoExtension {
-    registerKeyboardShortcuts(videoElement: HTMLVideoElement): void;
-}
-
-class VideoKeyboardExtension implements IVideoExtension {
-    private videoElement: HTMLVideoElement;
-
-    constructor(videoElement: HTMLVideoElement) {
+// Implement the VideoKeyboardExtension class
+class VideoKeyboardExtension {
+    constructor(videoElement) {
         if (!videoElement) {
             throw new Error('Invalid video element');
         }
         this.videoElement = videoElement;
     }
-
     registerKeyboardShortcuts() {
-        document.addEventListener('keydown', (event: KeyboardEvent) => {
+        document.addEventListener('keydown', (event) => {
             switch (event.key) {
                 case 'ArrowLeft':
                     this.videoElement.currentTime = Math.max(0, this.videoElement.currentTime - 10);
@@ -24,14 +18,14 @@ class VideoKeyboardExtension implements IVideoExtension {
                 case ' ':
                     if (this.videoElement.paused) {
                         this.videoElement.play();
-                    } else {
+                    }
+                    else {
                         this.videoElement.pause();
                     }
-                    event.preventDefault();
+                    event.preventDefault(); // Prevent scrolling the page
                     break;
             }
         });
     }
 }
-
 export default VideoKeyboardExtension;
