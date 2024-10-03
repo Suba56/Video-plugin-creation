@@ -1,4 +1,3 @@
-// Implement the VideoKeyboardExtension class
 class VideoKeyboardExtension {
     constructor(videoElement) {
         if (!videoElement) {
@@ -22,7 +21,7 @@ class VideoKeyboardExtension {
                     else {
                         this.videoElement.pause();
                     }
-                    event.preventDefault(); // Prevent scrolling the page
+                    event.preventDefault();
                     break;
             }
         });

@@ -1,4 +1,4 @@
-import VideoKeyboardExtension from './VideoKeyboardExtension';
+import VideoKeyboardExtension from './VideoKeyboardExtension.js';
 window.onload = () => {
     const videoElement = document.getElementById('myVideo');
     if (videoElement) {
