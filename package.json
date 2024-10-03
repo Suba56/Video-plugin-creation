@@ -1,0 +1,24 @@
+{
+  "name": "video-plugin-creation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Suba56/Video-plugin-creation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Suba56/Video-plugin-creation/issues"
+  },
+  "homepage": "https://github.com/Suba56/Video-plugin-creation#readme",
+  "dependencies": {
+    "typescript": "^5.6.2",
+    "video.js": "^8.17.4"
+  }
+}
